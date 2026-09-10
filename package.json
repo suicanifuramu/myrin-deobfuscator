@@ -1,0 +1,23 @@
+{
+  "name": "myrin-deobfuscator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static JavaScript analyzer and deobfuscator for base64 string-array/packer style obfuscation",
+  "main": "deobfuscator.js",
+  "bin": {
+    "jsdeob": "bin/jsdeob.js"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "test": "node test/run.js"
+  },
+  "dependencies": {
+    "@babel/generator": "^8.0.0",
+    "@babel/parser": "^8.0.4",
+    "@babel/traverse": "^8.0.4",
+    "@babel/types": "^8.0.4"
+  },
+  "optionalDependencies": {
+    "webcrack": "^2.16.0"
+  }
+}
